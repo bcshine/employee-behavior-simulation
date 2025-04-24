@@ -15,8 +15,161 @@
             <h2>직원 유형을 선택하세요</h2>
             <div class="button-container">
                 <button id="type1" class="employee-type">1. 피해자 코스프레형</button>
-                <button id="type2" class="employee-type">2. 뒷담화 유포형</button>
-                <button id="type3" class="employee-type">3. 지시불복종형</button>
+                <button id="type3" class="employee-type">2. 지시불복종형</button>
+                <button id="type2" class="employee-type">3. 뒷담화 유포형</button>
+            </div>
+        </div>
+        
+        <!-- 피해자 코스프레형 안내 페이지 -->
+        <div id="victim-guide-screen" class="screen">
+            <div class="guide-header">
+                <h2>피해자 코스프레형 대화 가이드</h2>
+                <button id="victim-guide-close-button" class="guide-close-button">닫기</button>
+            </div>
+            <div class="guide-content">
+                <h3>피해자 코스프레형 직원 특징</h3>
+                <p>실수나 문제가 생겨도 늘 남 탓을 하며, 사장에게 감정적으로 의존하거나 방어적 태도를 보이는 경향이 있습니다.</p>
+                
+                <div class="response-examples">
+                    <div class="example-section">
+                        <h3>Good 평가 받는 답변 예시</h3>
+                        <ul>
+                            <li>"그런 일이 있었군요, 많이 속상했겠어요."</li>
+                            <li>"당신의 마음이 충분히 이해가 돼요."</li>
+                            <li>"함께 해결 방법을 찾아보면 어떨까요?"</li>
+                            <li>"당신의 입장도 이해하지만, 다른 사람의 관점도 한번 생각해볼까요?"</li>
+                            <li>"이렇게 솔직하게 얘기해줘서 고마워요."</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="example-section">
+                        <h3>Normal 평가 받는 답변 예시</h3>
+                        <ul>
+                            <li>"그런 경험이 있으셨군요."</li>
+                            <li>"그 상황에서 기분이 어땠나요?"</li>
+                            <li>"함께 이야기해보면 좋겠네요."</li>
+                            <li>"모두의 관점에서 생각해볼 필요가 있겠어요."</li>
+                            <li>"앞으로 더 발전된 방향으로 가면 좋겠습니다."</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="example-section">
+                        <h3>Again 평가 받는 답변 예시</h3>
+                        <ul>
+                            <li>"그냥 네가 예민한 거 아니야?"</li>
+                            <li>"그런 감정 가질 필요 없어."</li>
+                            <li>"알아서 해결해."</li>
+                            <li>"너만 힘든 게 아니야, 다들 힘들어."</li>
+                            <li>"이제 그만 불평해."</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="guide-button-container">
+                    <button id="start-victim-conversation" class="start-conversation-button">대화 시작하기</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 지시불복종형 안내 페이지 -->
+        <div id="disobedience-guide-screen" class="screen">
+            <div class="guide-header">
+                <h2>지시불복종형 대화 가이드</h2>
+                <button id="disobedience-guide-close-button" class="guide-close-button">닫기</button>
+            </div>
+            <div class="guide-content">
+                <h3>지시불복종형 직원 특징</h3>
+                <p>사장의 말에 표면적으로는 따르지만 실제로는 무시하거나 회피하는 경향이 있습니다.</p>
+                
+                <div class="response-examples">
+                    <div class="example-section">
+                        <h3>Good 평가 받는 답변 예시</h3>
+                        <ul>
+                            <li>"이런 상황이 부담스러웠을 수 있겠네요."</li>
+                            <li>"지금 마음이 어떤지 더 이야기해 줄래요?"</li>
+                            <li>"어떻게 하면 내가 도울 수 있을까요?"</li>
+                            <li>"마감일이 중요한 이유와 당신의 상황 모두 이해해요."</li>
+                            <li>"솔직하게 이야기해줘서 고마워요."</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="example-section">
+                        <h3>Normal 평가 받는 답변 예시</h3>
+                        <ul>
+                            <li>"그런 상황이 있었군요."</li>
+                            <li>"왜 그렇게 생각하시나요?"</li>
+                            <li>"도움이 필요하신가요?"</li>
+                            <li>"이 일정이 중요한 이유가 있습니다."</li>
+                            <li>"앞으로 더 나은 방향으로 가면 좋겠어요."</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="example-section">
+                        <h3>Again 평가 받는 답변 예시</h3>
+                        <ul>
+                            <li>"핑계대지 마세요."</li>
+                            <li>"개인 감정 때문에 일을 못하면 안 됩니다."</li>
+                            <li>"그냥 시간 맞춰서 끝내세요."</li>
+                            <li>"회사 규칙은 지켜야 합니다."</li>
+                            <li>"업무 태도를 개선하지 않으면 안 됩니다."</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="guide-button-container">
+                    <button id="start-disobedience-conversation" class="start-conversation-button">대화 시작하기</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 뒷담화 유포형 안내 페이지 -->
+        <div id="gossip-guide-screen" class="screen">
+            <div class="guide-header">
+                <h2>뒷담화 유포형 대화 가이드</h2>
+                <button id="guide-close-button" class="guide-close-button">닫기</button>
+            </div>
+            <div class="guide-content">
+                <h3>뒷담화 유포형 직원 특징</h3>
+                <p>동료나 사장의 말과 행동을 왜곡해 퍼뜨리며 내부 갈등을 조장하는 경향이 있습니다.</p>
+                
+                <div class="response-examples">
+                    <div class="example-section">
+                        <h3>Good 평가 받는 답변 예시</h3>
+                        <ul>
+                            <li>"이야기해줘서 고마워요. 이런 말 하기 쉽지 않았을 텐데."</li>
+                            <li>"이런 상황이 있었군요, 어떤 점이 가장 힘들었나요?"</li>
+                            <li>"이 문제는 그냥 넘기지 않고 함께 해결해보죠."</li>
+                            <li>"이런 일이 반복되지 않도록 팀 내 소통 기준을 만들어볼까요?"</li>
+                            <li>"언제든 얘기해도 괜찮다는 거, 잊지 말아요."</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="example-section">
+                        <h3>Normal 평가 받는 답변 예시</h3>
+                        <ul>
+                            <li>"용기 내서 말해줘서 좋네요."</li>
+                            <li>"이 상황을 좀 더 이해하고 싶어요."</li>
+                            <li>"개선할 방법에 대해 대화해봅시다."</li>
+                            <li>"우리 팀의 소통 규칙에 대해 생각해볼 필요가 있겠네요."</li>
+                            <li>"앞으로 열린 대화가 필요할 것 같아요."</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="example-section">
+                        <h3>Again 평가 받는 답변 예시</h3>
+                        <ul>
+                            <li>"그런 말 함부로 전하지 마세요."</li>
+                            <li>"그냥 신경 끄면 될 일 아닌가요?"</li>
+                            <li>"그건 당신이 해결해야 할 문제에요."</li>
+                            <li>"다른 사람은 다 잘 지내는데 문제가 있네요."</li>
+                            <li>"이런 소문 퍼뜨리는 건 도움이 안 됩니다."</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="guide-button-container">
+                    <button id="start-gossip-conversation" class="start-conversation-button">대화 시작하기</button>
+                </div>
             </div>
         </div>
         

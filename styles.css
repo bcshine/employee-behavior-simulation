@@ -66,6 +66,95 @@ button {
     transform: translateY(-2px);
 }
 
+/* 뒷담화 유형 안내 페이지 스타일 */
+.guide-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+#guide-close-button {
+    background-color: #95a5a6;
+    color: white;
+}
+
+#guide-close-button:hover {
+    background-color: #7f8c8d;
+}
+
+.guide-content {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.guide-content h3 {
+    margin: 15px 0 10px;
+    color: #2c3e50;
+}
+
+.guide-content p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.response-examples {
+    margin-top: 20px;
+}
+
+.example-section {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.example-section h3 {
+    color: #3498db;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.example-section ul {
+    padding-left: 20px;
+}
+
+.example-section li {
+    margin-bottom: 8px;
+}
+
+.example-section:nth-child(1) h3 {
+    color: #2ecc71;
+}
+
+.example-section:nth-child(2) h3 {
+    color: #f39c12;
+}
+
+.example-section:nth-child(3) h3 {
+    color: #e74c3c;
+}
+
+.guide-button-container {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.start-conversation-button {
+    background-color: #2ecc71;
+    color: white;
+    font-weight: bold;
+    padding: 15px 25px;
+    font-size: 18px;
+}
+
+.start-conversation-button:hover {
+    background-color: #27ae60;
+    transform: translateY(-2px);
+}
+
 #conversation-header {
     display: flex;
     justify-content: space-between;
@@ -181,4 +270,115 @@ button {
     button {
         padding: 10px 15px;
     }
+    
+    .guide-content {
+        max-height: 60vh;
+    }
+}
+
+/* 평가 결과 스타일 */
+.evaluation {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.good {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.normal {
+    background-color: #f39c12;
+    color: white;
+}
+
+.again {
+    background-color: #e74c3c;
+    color: white;
+}
+
+/* 교육적 메시지 스타일 */
+.educational-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    max-width: 90%;
+    width: 500px;
+    max-height: 80vh;
+    overflow-y: auto;
+    animation: fade-in 0.5s ease-out;
+}
+
+.educational-message h3 {
+    color: #e74c3c;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.educational-message p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.educational-message ul {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+.educational-message li {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.educational-message button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 25px;
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.educational-message button:hover {
+    background-color: #2980b9;
+}
+
+/* 메시지 애니메이션 효과 */
+@keyframes fade-in {
+    from { opacity: 0; transform: translate(-50%, -55%); }
+    to { opacity: 1; transform: translate(-50%, -50%); }
+}
+
+.fade-out {
+    animation: fade-out 0.5s ease-in;
+    opacity: 0;
+}
+
+@keyframes fade-out {
+    from { opacity: 1; transform: translate(-50%, -50%); }
+    to { opacity: 0; transform: translate(-50%, -45%); }
+}
+
+/* 교육적 메시지가 표시될 때 배경 어둡게 처리 */
+.educational-message::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
 } 
